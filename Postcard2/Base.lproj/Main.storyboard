@@ -68,10 +68,19 @@
                                     <rect key="frame" x="16" y="77" width="382" height="110"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdL-nW-ptl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="217" width="382" height="21"/>
+                                </variation>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pGA-uF-nCU">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="318" y="195" width="80" height="80"/>
+                                    <rect key="frame" x="318" y="290" width="80" height="80"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kC4-9J-RMM">
@@ -79,7 +88,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="283" width="382" height="30"/>
+                                    <rect key="frame" x="16" y="378" width="382" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zx9-Fg-oRM">
@@ -87,7 +96,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="321" width="382" height="30"/>
+                                    <rect key="frame" x="16" y="416" width="382" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjX-Ne-6qt">
@@ -98,7 +107,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="245" width="294" height="30"/>
+                                    <rect key="frame" x="16" y="340" width="294" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="U32-BE-on3"/>
@@ -109,6 +118,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="DRa-BD-X8Y"/>
+                                <exclude reference="hdL-nW-ptl"/>
                                 <exclude reference="pGA-uF-nCU"/>
                                 <exclude reference="kC4-9J-RMM"/>
                                 <exclude reference="Zx9-Fg-oRM"/>
@@ -118,6 +128,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="DRa-BD-X8Y"/>
+                                <include reference="hdL-nW-ptl"/>
                                 <include reference="pGA-uF-nCU"/>
                                 <include reference="kC4-9J-RMM"/>
                                 <include reference="Zx9-Fg-oRM"/>
@@ -131,6 +142,7 @@
                         <outlet property="enterNameTextField" destination="kC4-9J-RMM" id="m1G-3L-2sQ"/>
                         <outlet property="mailButton" destination="KjX-Ne-6qt" id="Ccy-L0-aYl"/>
                         <outlet property="messageLabel" destination="DRa-BD-X8Y" id="rE6-r0-D1K"/>
+                        <outlet property="nameLabel" destination="hdL-nW-ptl" id="b8A-fk-lVW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
